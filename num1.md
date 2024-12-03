@@ -60,7 +60,7 @@
 |6.1| Extra_Service	      | service_id   | **Идентификатор** <br/> Тип данных: UUID  <br/> Пример: ‘a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11’ <br/> Ограничения: PRIMARY KEY        |
 |6.2|                     | Service_Type | Тип данных: varchar(255) <br/> Пример: ‘Страхование жизни’ <br/> Ограничения: NOT NULL                                               |
 |6.3|                     | Price        | Тип данных: float <br/> Пример: ‘25000.00’ <br/> Ограничения: NOT NULL                                                               |
-|7.1| Credit_Product	    | Product_Type | Тип данных: varchar(255) <br/> Пример: ‘Кредит наличными’ <br/> Ограничения: NOT NULL                                                |
+|7.1| Credit_Product	    | Product_Type | **Идентификатор** <br/> Тип данных: varchar(255) <br/> Пример: ‘Кредит наличными’ <br/> Ограничения: PRIMARY KEY                                                |
 |7.2|                     | Bet_Size     | Тип данных: float <br/> Пример: ‘7.70’ <br/> Ограничения: NOT NULL, Значение в диапазоне (0,100)                                     |
 |7.3|                     | Information  | Тип данных: varchar(255) <br/> Пример: ‘Информация о продукте’ <br/>                                                                 |
 | 8 | Loan_Purpose	      | Loan_Purpose | **Идентификатор** <br/> Тип данных: varchar(255) <br/> Пример: ‘Покупка товаров/услуг’ <br/> Ограничения: PRIMARY KEY                |
