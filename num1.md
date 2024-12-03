@@ -39,7 +39,7 @@
 |2.6|                     | Issued_by           |Тип данных: varchar(255) <br/> Пример: ‘УФМС’ <br/> Ограничения: NOT NULL                                                      |
 |2.7|                     | Bitrh_Date          | Тип данных: date <br/> Пример: ‘1990-01-01’ <br/> Ограничения: NOT NULL                                                       |
 |2.8|                     | Birth_Place         | Тип данных: varchar(255) <br/> Пример: ‘Новосибирск’ <br/> Ограничения: NOT NULL                                              |
-|2.9|                     | Registration_Region | Тип данных: varchar(255) <br/> Пример: ‘Новосибирская область’ <br/> Ограничения: NOT NULL                                    |
+|2.9|                     | Registration_Region | Тип данных: varchar(255) <br/> Пример: ‘Новосибирская область’                                   |
 |3.1| Client_job        	| client_id         | **Идентификатор** <br/> Тип данных: UUID  <br/> Пример: ‘a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11’ <br/> Ограничения: PRIMARY KEY, FOREIGN KEY |
 |3.2|                     | Region            | Тип данных: varchar(255) <br/> Пример: ‘Новосибирская область’ <br/> Ограничения: NOT NULL                                      |
 |3.3|                     | Organization_Name | Тип данных: varchar(255) <br/> Пример: ‘ООО "Рога и Копыта"’ <br/> Ограничения: NOT NULL                                        |
