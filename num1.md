@@ -30,7 +30,7 @@
 |1.4|                     | Patronymic | Тип данных: varchar(50) <br/> Пример: ‘Иванович’ <br/> Ограничения: NOT NULL                                                           |
 |1.5|                     | Phone_main | Тип данных: varchar(16) <br/> Пример: ‘+7(901)230-12-20’ <br/> Ограничения: NOT NULL, UNIQUE                                           |
 |1.6|                     | Phone_add  | Тип данных: varchar(16) <br/> Пример: ‘+7-912-345-6780’ <br/>                                                                          |
-|1.7|                     | Email      | Тип данных: varchar(50) <br/> Пример: ‘peson.mail@gmail.com’ <br/> Ограничения: NOT NULL,UNIQUE                                        |
+|1.7|                     | Email      | Тип данных: varchar(255) <br/> Пример: ‘peson.mail@gmail.com’ <br/> Ограничения: NOT NULL, UNIQUE                                        |
 |2.1| Client_passport	    | client_id           | **Идентификатор** <br/> Тип данных: UUID  <br/> Пример: ‘a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11’ <br/> Ограничения: PRIMARY KEY, FOREIGN KEY |
 |2.2|                     | Series              | Тип данных: varchar(4) <br/> Пример: ‘1945’ <br/> Ограничения:  PRIMARY KEY                                                   |
 |2.3|                     | Number              | Тип данных: varchar(6) <br/> Пример: ‘300122’ <br/> Ограничения:  PRIMARY KEY                                                 |
