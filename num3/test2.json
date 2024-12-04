@@ -1,0 +1,17 @@
+{
+"firstName": "Иван",
+"middleName": "Иванович",
+"lastName": "Иванов",
+"birthDate": "2004-12-31T21:00:00.000Z",
+"citizenship": "РФ",
+"passport": {
+"series": "12 34",
+"number": "123456",
+"issuedAt": "2023-03-11T21:00:00.000Z",
+"issuer": "УФМС",
+"issuerСode": "123-456"
+},
+"creditHistory": [
+]
+}
+
