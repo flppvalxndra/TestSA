@@ -1,0 +1,10 @@
+from num3 import Check
+assert Check("test0.json") == False, 'Тест удачен'
+assert Check("test1.json") == True, 'Тест удачен'
+assert Check("test2.json") == False, 'Тест удачен'
+assert Check("test3.json") == False, 'Тест удачен'
+assert Check("test4.json") == False, 'Тест удачен'
+assert Check("test5.json") == False, 'Тест удачен'
+assert Check("test6.json") == False, 'Тест удачен'
+assert Check("test7.json") == False, 'Тест удачен'
+assert Check("test8.json") == False, 'Тест удачен'
