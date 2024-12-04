@@ -14,7 +14,10 @@
 from datetime import datetime
 import json
 
-def check(data):
+def Check(filename):
+    with open(filename, 'r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+
     birthDate = datetime.strptime(data["birthDate"], '%Y-%m-%dT%H:%M:%S.%fZ')
     issuedAt = datetime.strptime(data["passport"]["issuedAt"], '%Y-%m-%dT%H:%M:%S.%fZ')
 
@@ -23,6 +26,7 @@ def check(data):
         if check2(years, birthDate, issuedAt):
             if check3(data["creditHistory"]):
                 return True
+    return False
 
 # Проверка 1. Минимальный возраст.
 # Если клиент моложе 20 лет – отказ.
@@ -74,10 +78,3 @@ def check3(creditHistory):
         return False
     else:
         return True
-
-with open('test1.json', 'r', encoding='utf-8') as json_file:
-    data = json.load(json_file)
-if check(data) == True:
-    print("Кредит одобрен")
-else:
-    print("Отказ")
