@@ -78,3 +78,4 @@ def check3(creditHistory):
         return False
     else:
         return True
+
